@@ -28,21 +28,21 @@ export function FormNextToSection({
   const socials = [
     {
       title: 'twitter',
-      href: 'https://twitter.com/strapijs',
+      href: '#',
       icon: (
         <IconBrandX className="h-5 w-5 text-muted  hover:text-neutral-100" />
       ),
     },
     {
       title: 'github',
-      href: 'https://github.com/strapi',
+      href: '#',
       icon: (
         <IconBrandGithub className="h-5 w-5 text-muted  hover:text-neutral-100" />
       ),
     },
     {
       title: 'linkedin',
-      href: 'https://linkedin.com/strapi',
+      href: '#',
       icon: (
         <IconBrandLinkedin className="h-5 w-5 text-muted  hover:text-neutral-100" />
       ),
