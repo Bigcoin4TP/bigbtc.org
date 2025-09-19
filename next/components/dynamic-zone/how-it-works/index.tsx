@@ -8,7 +8,7 @@ import { Heading } from '../../elements/heading';
 import { Subheading } from '../../elements/subheading';
 import { FeatureIconContainer } from '../features/feature-icon-container';
 import { Card } from './card';
-
+import { GradientContainer } from '../../gradient-container';
 export const HowItWorks = ({
   heading,
   sub_heading,
@@ -19,8 +19,8 @@ export const HowItWorks = ({
   steps: any;
 }) => {
   return (
-    <div>
-      <Container className="py-20 max-w-7xl mx-auto  relative z-40">
+    <GradientContainer className="md:my-20">
+      <Container className="md:my-20">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
           <IconSettings className="h-6 w-6 text-white" />
         </FeatureIconContainer>
@@ -31,6 +31,7 @@ export const HowItWorks = ({
         <p className="text-neutral-400 mt-4 relative z-20">ICO proceeds acquire audited, insured gold reserves. Profits from low‑risk gold operations (e.g., leasing, collateralized lending) are distributed monthly to BBTC holders. Convertibility is enabled through a global network of authorized retail gold partners.
         </p>
         <p className="text-neutral-400 mt-4 relative z-20">The Sakura Foundation reinvests surplus into social impact: renewable energy, rural broadband, and access to alternative medicine research consistent with local regulations.</p>
+        <p className="text-neutral-400 mt-4 relative z-20">&nbsp;<br /><br /></p>
         {steps &&
           steps.map(
             (item: { title: string; description: string }, index: number) => (
@@ -43,6 +44,6 @@ export const HowItWorks = ({
             )
           )}
       </Container>
-    </div>
+    </GradientContainer>
   );
 };
