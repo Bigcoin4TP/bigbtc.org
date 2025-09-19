@@ -19,47 +19,11 @@ export const Footer = async ({
               {data?.logo?.image && <Logo image={data?.logo?.image} />}
             </div>
             <div className="max-w-xs">{data?.description}</div>
-            <div className="mt-4">{data?.copyright}</div>
+            <div className="mt-4">{data?.designed_developed_by}</div>
             <div className="mt-10">
-              Designed and Developed by{' '}
-              <a className="text-white underline" href="https://aceternity.com">
-                Aceternity
-              </a>{' '}
-              &{' '}
-              <a className="text-white underline" href="https://strapi.io">
-                Strapi
-              </a>
             </div>
             <div className="mt-2">
-              built with{' '}
-              <a className="text-white underline" href="https://strapi.io">
-                Strapi
-              </a>
-              ,{' '}
-              <a className="text-white underline" href="https://nextjs.org">
-                Next.js
-              </a>
-              ,{' '}
-              <a
-                className="text-white underline"
-                href="https://tailwindcss.com"
-              >
-                Tailwind CSS
-              </a>
-              ,{' '}
-              <a
-                className="text-white underline"
-                href="https://framer.com/motion"
-              >
-                Motion Animation Lib
-              </a>
-              , and{' '}
-              <a
-                className="text-white underline"
-                href="https://ui.aceternity.com"
-              >
-                Aceternity UI
-              </a>
+              {data?.copyright}
             </div>
           </div>
           <div className="grid grid-cols-3 gap-10 items-start mt-10 md:mt-0">
