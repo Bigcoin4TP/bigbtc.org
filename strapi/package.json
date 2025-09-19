@@ -25,6 +25,7 @@
     "@strapi/strapi": "5.23.4",
     "better-sqlite3": "11.7.0",
     "patch-package": "^8.0.0",
+    "pg": "^8.16.3",
     "pluralize": "^8.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -32,11 +33,15 @@
     "styled-components": "^6.0.0",
     "uuid": "^10.0.0"
   },
+  "overrides": {
+    "@strapi/types": "5.23.4",
+    "@strapi/admin": "5.23.4"
+  },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "LAUNCHPAD-LOCAL"
+    "uuid": "LAUNCHPAD-LOCAL-11c8e040-f3a2-4d2d-8b26-c1c71c0e627b"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
