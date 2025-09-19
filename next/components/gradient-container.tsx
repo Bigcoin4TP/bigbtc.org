@@ -42,7 +42,7 @@ export const GradientContainer = ({
       ref={ref}
       style={
         {
-          '--top': 'rgba(97, 106, 115, .12)',
+          '--top': 'rgba(255, 204, 0, 0.4)', // Softer gold with reduced brightness and opacity
           '--bottom': 'transparent',
           '--conic-size': '600px',
         } as CSSProperties
@@ -61,9 +61,8 @@ export const GradientContainer = ({
         after:opacity-100
         `}
         style={{
-          background: `conic-gradient(from 90deg at ${
-            100 - percentage
-          }% 0%, var(--top), var(--bottom) 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${percentage}% 0%, var(--bottom) 180deg, var(--top)) 100% 0% / 50% 100% no-repeat`,
+          background: `conic-gradient(from 90deg at ${100 - percentage
+            }% 0%, var(--top), var(--bottom) 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${percentage}% 0%, var(--bottom) 180deg, var(--top)) 100% 0% / 50% 100% no-repeat`,
           opacity: 0.901567,
         }}
       />

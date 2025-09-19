@@ -54,7 +54,7 @@ const ShootingStars: React.FC = () => {
 
     createStar();
 
-    return () => {};
+    return () => { };
   }, []);
 
   useEffect(() => {
@@ -108,18 +108,14 @@ const ShootingStars: React.FC = () => {
           width={10 * star.scale}
           height="2"
           fill="url(#gradient)"
-          transform={`rotate(${star.angle}, ${
-            star.x + (10 * star.scale) / 2
-          }, ${star.y + 1})`}
+          transform={`rotate(${star.angle}, ${star.x + (10 * star.scale) / 2
+            }, ${star.y + 1})`}
         />
       )}
       <defs>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: '#2EB9DF', stopOpacity: 0 }} />
-          <stop
-            offset="100%"
-            style={{ stopColor: '#9E00FF', stopOpacity: 1 }}
-          />
+          <stop offset="0%" style={{ stopColor: 'rgba(255, 223, 0, 0)', stopOpacity: 0 }} />
+          <stop offset="100%" style={{ stopColor: 'rgba(255, 223, 0, 1)', stopOpacity: 1 }} />
         </linearGradient>
       </defs>
     </svg>

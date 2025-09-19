@@ -26,7 +26,11 @@ export const HowItWorks = ({
         </FeatureIconContainer>
         <Heading className="pt-4">{heading}</Heading>
         <Subheading className="max-w-3xl mx-auto">{sub_heading}</Subheading>
-
+        <p className="text-neutral-400 mt-4 relative z-20">BBTC was conceived to blend the transparency of Bitcoin blockchain with the time‑tested trust of physical gold. Issued by the non‑profit Sakura Foundation, BBTC channels innovation toward ethical finance and inclusive prosperity.
+        </p>
+        <p className="text-neutral-400 mt-4 relative z-20">ICO proceeds acquire audited, insured gold reserves. Profits from low‑risk gold operations (e.g., leasing, collateralized lending) are distributed monthly to BBTC holders. Convertibility is enabled through a global network of authorized retail gold partners.
+        </p>
+        <p className="text-neutral-400 mt-4 relative z-20">The Sakura Foundation reinvests surplus into social impact: renewable energy, rural broadband, and access to alternative medicine research consistent with local regulations.</p>
         {steps &&
           steps.map(
             (item: { title: string; description: string }, index: number) => (
